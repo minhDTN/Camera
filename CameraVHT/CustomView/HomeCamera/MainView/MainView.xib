@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SVN-Gotham Book.otf">
+            <string>SVN-GothamBook</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainView" customModule="CameraVHT" customModuleProvider="target">
+            <connections>
+                <outlet property="controlView" destination="iZl-YB-aee" id="ZUR-M4-0zO"/>
+                <outlet property="scrollView" destination="HRm-o7-afm" id="zp4-FX-pkE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="379"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRm-o7-afm">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="379"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNp-kz-hkW">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="379"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R55-yW-38F" customClass="FunctionView" customModule="CameraVHT" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="24" width="414" height="87"/>
+                                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="R55-yW-38F" secondAttribute="height" multiplier="138:29" id="jJp-Op-y37"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="iZl-YB-aee" customClass="ControlView" customModule="CameraVHT" customModuleProvider="target">
+                                    <rect key="frame" x="148" y="135" width="118" height="118"/>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="250" constant="118" id="Woq-P7-jYP"/>
+                                        <constraint firstAttribute="width" secondItem="iZl-YB-aee" secondAttribute="height" multiplier="1:1" id="tbv-Sa-5z4"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Ấn mũi tên để điều khiển các hướng, hoặc nhấn nút tròn chính giữa để camera kích hoạt chế độ tự động quay" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ts-Vm-wBM">
+                                    <rect key="frame" x="61" y="273" width="293" height="26"/>
+                                    <fontDescription key="fontDescription" name="SVN-GothamBook" family="SVN-Gotham" pointSize="10"/>
+                                    <color key="textColor" red="0.19607841970000001" green="0.20000001789999999" blue="0.2117646933" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97647058959999999" green="0.98039215800000001" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="R55-yW-38F" firstAttribute="leading" secondItem="MNp-kz-hkW" secondAttribute="leading" id="49v-HL-pEZ"/>
+                                <constraint firstItem="iZl-YB-aee" firstAttribute="top" secondItem="R55-yW-38F" secondAttribute="bottom" constant="24" id="9Vn-dE-pBR"/>
+                                <constraint firstItem="iZl-YB-aee" firstAttribute="centerX" secondItem="MNp-kz-hkW" secondAttribute="centerX" id="S1D-fT-2nt"/>
+                                <constraint firstItem="7Ts-Vm-wBM" firstAttribute="leading" secondItem="MNp-kz-hkW" secondAttribute="leading" constant="61" id="YW6-No-nOX"/>
+                                <constraint firstAttribute="trailing" secondItem="7Ts-Vm-wBM" secondAttribute="trailing" constant="60" id="YsJ-Kz-GsF"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7Ts-Vm-wBM" secondAttribute="bottom" constant="80" id="fB1-U2-iQD"/>
+                                <constraint firstAttribute="trailing" secondItem="R55-yW-38F" secondAttribute="trailing" id="fSo-YC-WRv"/>
+                                <constraint firstItem="7Ts-Vm-wBM" firstAttribute="top" secondItem="iZl-YB-aee" secondAttribute="bottom" constant="20" id="r9x-dd-nJE"/>
+                                <constraint firstItem="R55-yW-38F" firstAttribute="top" secondItem="MNp-kz-hkW" secondAttribute="top" constant="24" id="z66-mi-FKE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215800000001" green="0.98039215800000001" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="MNp-kz-hkW" secondAttribute="bottom" id="5IZ-DB-skx"/>
+                        <constraint firstItem="MNp-kz-hkW" firstAttribute="width" secondItem="HRm-o7-afm" secondAttribute="width" id="Q5q-T8-nXl"/>
+                        <constraint firstItem="MNp-kz-hkW" firstAttribute="height" secondItem="HRm-o7-afm" secondAttribute="height" priority="250" id="Zg1-yC-5N2"/>
+                        <constraint firstItem="MNp-kz-hkW" firstAttribute="leading" secondItem="HRm-o7-afm" secondAttribute="leading" id="diY-yo-sPs"/>
+                        <constraint firstAttribute="trailing" secondItem="MNp-kz-hkW" secondAttribute="trailing" id="lv3-ry-haS"/>
+                        <constraint firstItem="MNp-kz-hkW" firstAttribute="top" secondItem="HRm-o7-afm" secondAttribute="top" id="wXR-I7-YGf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.97647058959999999" green="0.98039215800000001" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="HRm-o7-afm" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="arL-9u-p4D"/>
+                <constraint firstItem="HRm-o7-afm" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bE5-0b-Roj"/>
+                <constraint firstItem="HRm-o7-afm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jl4-5l-Pvf"/>
+                <constraint firstItem="HRm-o7-afm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qJN-fo-f5j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1011.0351562499999" y="-484.69985358711563"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

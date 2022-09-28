@@ -1,0 +1,20 @@
+PODS:
+  - LayoutHelper (1.0.0)
+  - MobileVLCKit (3.3.17)
+
+DEPENDENCIES:
+  - LayoutHelper
+  - MobileVLCKit (~> 3.3.0)
+
+SPEC REPOS:
+  trunk:
+    - LayoutHelper
+    - MobileVLCKit
+
+SPEC CHECKSUMS:
+  LayoutHelper: fd809f52e0ae583f7576bf5d2af8248b5c3ec4d0
+  MobileVLCKit: c5dd1b0ae933dc9c2348099840e753496dcdd908
+
+PODFILE CHECKSUM: c6e34097dd476bb6ec58306b0ec8668bba643342
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jfL-az-zDC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Camera-->
+        <scene sceneID="BKy-Kf-8WL">
+            <objects>
+                <viewController storyboardIdentifier="HomeCamera" id="jfL-az-zDC" customClass="HomeCamera" customModule="CameraVHT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JRs-vF-Apd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNl-wa-Fjq" customClass="NavigationView" customModule="CameraVHT" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="L5E-Gm-C6J"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcU-c7-QwZ">
+                                <rect key="frame" x="0.0" y="758" width="414" height="138"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4V-jc-0va" customClass="TabbarView" customModule="CameraVHT" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="j4V-jc-0va" secondAttribute="trailing" id="EZk-7g-3ba"/>
+                                    <constraint firstItem="j4V-jc-0va" firstAttribute="leading" secondItem="kcU-c7-QwZ" secondAttribute="leading" id="P2X-Qw-G1D"/>
+                                    <constraint firstAttribute="bottom" secondItem="j4V-jc-0va" secondAttribute="bottom" id="TOT-r6-ebd"/>
+                                    <constraint firstAttribute="height" constant="138" id="We9-JJ-YFz"/>
+                                    <constraint firstItem="j4V-jc-0va" firstAttribute="top" secondItem="kcU-c7-QwZ" secondAttribute="top" id="zao-vz-vPK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8N9-hC-FWZ" customClass="DisplayView" customModule="CameraVHT" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="146" width="414" height="233"/>
+                                <color key="backgroundColor" red="0.14901961389999999" green="0.13725490870000001" blue="0.1725490093" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8N9-hC-FWZ" secondAttribute="height" multiplier="16:9" id="fYv-xJ-czf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ff9-7u-0Nv" customClass="MainView" customModule="CameraVHT" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="379" width="414" height="374"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7HI-n2-7Pb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kcU-c7-QwZ" firstAttribute="leading" secondItem="JRs-vF-Apd" secondAttribute="leading" id="37Y-3l-g41"/>
+                            <constraint firstItem="8N9-hC-FWZ" firstAttribute="top" secondItem="JRs-vF-Apd" secondAttribute="top" priority="750" id="7cQ-jS-FNy"/>
+                            <constraint firstItem="8N9-hC-FWZ" firstAttribute="top" secondItem="qNl-wa-Fjq" secondAttribute="bottom" id="FNU-LO-abj"/>
+                            <constraint firstAttribute="bottom" secondItem="kcU-c7-QwZ" secondAttribute="bottom" id="INn-O3-KOS"/>
+                            <constraint firstItem="Ff9-7u-0Nv" firstAttribute="trailing" secondItem="JRs-vF-Apd" secondAttribute="trailing" id="Iog-BN-fjd"/>
+                            <constraint firstItem="Ff9-7u-0Nv" firstAttribute="top" secondItem="8N9-hC-FWZ" secondAttribute="bottom" id="Jt6-o9-tDi"/>
+                            <constraint firstItem="qNl-wa-Fjq" firstAttribute="leading" secondItem="JRs-vF-Apd" secondAttribute="leading" id="Nob-Lx-aTX"/>
+                            <constraint firstAttribute="bottom" secondItem="8N9-hC-FWZ" secondAttribute="bottom" priority="750" id="Qtk-7F-ufQ"/>
+                            <constraint firstItem="kcU-c7-QwZ" firstAttribute="trailing" secondItem="JRs-vF-Apd" secondAttribute="trailing" id="Rty-fF-HV4"/>
+                            <constraint firstItem="kcU-c7-QwZ" firstAttribute="top" secondItem="Ff9-7u-0Nv" secondAttribute="bottom" constant="5" id="Tsm-NW-oS1"/>
+                            <constraint firstItem="Ff9-7u-0Nv" firstAttribute="leading" secondItem="JRs-vF-Apd" secondAttribute="leading" id="dbU-yZ-ZbB"/>
+                            <constraint firstItem="qNl-wa-Fjq" firstAttribute="top" secondItem="JRs-vF-Apd" secondAttribute="top" id="dje-6x-QTO"/>
+                            <constraint firstItem="qNl-wa-Fjq" firstAttribute="trailing" secondItem="JRs-vF-Apd" secondAttribute="trailing" id="dnl-P8-lnj"/>
+                            <constraint firstItem="8N9-hC-FWZ" firstAttribute="trailing" secondItem="7HI-n2-7Pb" secondAttribute="trailing" id="dyf-pr-QXP"/>
+                            <constraint firstItem="8N9-hC-FWZ" firstAttribute="leading" secondItem="7HI-n2-7Pb" secondAttribute="leading" id="rfC-S8-vqE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayView" destination="8N9-hC-FWZ" id="SUo-kB-aJp"/>
+                        <outlet property="displayViewAspectRatio" destination="fYv-xJ-czf" id="iDu-ha-sxN"/>
+                        <outlet property="displayViewBottomContraints" destination="Jt6-o9-tDi" id="DwE-6A-RVx"/>
+                        <outlet property="displayViewBottomLanscapeContraints" destination="Qtk-7F-ufQ" id="1IU-Us-eT1"/>
+                        <outlet property="displayViewTopContraints" destination="FNU-LO-abj" id="k2c-gP-cyT"/>
+                        <outlet property="displayViewTopLanscapeContraints" destination="7cQ-jS-FNy" id="Iiy-1L-WWH"/>
+                        <outlet property="mainView" destination="Ff9-7u-0Nv" id="PWp-Dr-him"/>
+                        <outlet property="navigationView" destination="qNl-wa-Fjq" id="C98-ca-2Gq"/>
+                        <outlet property="roundedView" destination="j4V-jc-0va" id="OFL-Tk-Z3W"/>
+                        <outlet property="shadowView" destination="kcU-c7-QwZ" id="cPb-PY-eMr"/>
+                        <outlet property="shadowViewHeightContraint" destination="We9-JJ-YFz" id="9ZU-xN-VtS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9c-9B-fq9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728.98550724637687" y="79.017857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

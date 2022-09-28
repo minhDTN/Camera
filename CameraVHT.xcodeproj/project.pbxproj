@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA2CB7D228D31D7500FE2E5E /* HomeCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2CB7D128D31D7500FE2E5E /* HomeCamera.storyboard */; };
+		FA2CB7D628D31D9100FE2E5E /* HomeCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CB7D528D31D9100FE2E5E /* HomeCamera.swift */; };
+		FA2CB7DA28D325BB00FE2E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2CB7D928D325BB00FE2E5E /* Main.storyboard */; };
+		FA2CB7DC28D325D300FE2E5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CB7DB28D325D300FE2E5E /* ViewController.swift */; };
+		FA2CB7DF28D32EF200FE2E5E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CB7DE28D32EF200FE2E5E /* Login.swift */; };
+		FA2CB7E128D32EFD00FE2E5E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2CB7E028D32EFD00FE2E5E /* Login.storyboard */; };
+		FA7BB13228D0E9E500EACBAA /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB13128D0E9DF00EACBAA /* libbz2.tbd */; };
+		FA7BB13428D0E9F800EACBAA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB13328D0E9F000EACBAA /* libc++.tbd */; };
+		FA7BB13628D0EA0400EACBAA /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB13528D0EA0000EACBAA /* libiconv.tbd */; };
+		FA7BB13828D0EA0E00EACBAA /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB13728D0EA0B00EACBAA /* libxml2.tbd */; };
+		FA7BB14328D0EE9B00EACBAA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB11F28D0E94B00EACBAA /* AudioToolbox.framework */; };
+		FA7BB14628D0EE9F00EACBAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB12128D0E95A00EACBAA /* AVFoundation.framework */; };
+		FA7BB14828D0EEA000EACBAA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB12328D0E96100EACBAA /* CFNetwork.framework */; };
+		FA7BB14A28D0EEA400EACBAA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB12528D0E96D00EACBAA /* CoreFoundation.framework */; };
+		FA7BB14C28D0EEA400EACBAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB12728D0E9A200EACBAA /* CoreGraphics.framework */; };
+		FA7BB14E28D0EEA500EACBAA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB12928D0E9AA00EACBAA /* CoreMedia.framework */; };
+		FA7BB15028D0EEA500EACBAA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB12B28D0E9B600EACBAA /* CoreText.framework */; };
+		FA7BB15228D0EEA500EACBAA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB12D28D0E9BF00EACBAA /* CoreVideo.framework */; };
+		FA7BB15428D0EEA500EACBAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB12F28D0E9C700EACBAA /* Foundation.framework */; };
+		FA7BB15628D0EEB700EACBAA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB13928D0EA1500EACBAA /* OpenGLES.framework */; };
+		FA7BB15A28D0EEB700EACBAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB13B28D0EA1D00EACBAA /* QuartzCore.framework */; };
+		FA7BB15C28D0EEB800EACBAA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB13D28D0EA2600EACBAA /* Security.framework */; };
+		FA7BB15E28D0EEB800EACBAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB14128D0EA3600EACBAA /* UIKit.framework */; };
+		FA7BB16028D0EEB800EACBAA /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7BB13F28D0EA2D00EACBAA /* VideoToolbox.framework */; };
+		FA7BB16228D0EEC600EACBAA /* Pods_CameraVHT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BA90CB27F245D01FCBECCB /* Pods_CameraVHT.framework */; };
+		FA8FC18F28E2D27600A6F5D0 /* ControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8FC18D28E2D27600A6F5D0 /* ControlView.xib */; };
+		FA8FC19028E2D27600A6F5D0 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FC18E28E2D27600A6F5D0 /* ControlView.swift */; };
+		FAF2CD4B28C991F300024EB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2CD4A28C991F300024EB2 /* AppDelegate.swift */; };
+		FAF2CD4D28C991F300024EB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2CD4C28C991F300024EB2 /* SceneDelegate.swift */; };
+		FAF2CD5428C991F400024EB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF2CD5328C991F400024EB2 /* Assets.xcassets */; };
+		FAF2CD5728C991F400024EB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF2CD5528C991F400024EB2 /* LaunchScreen.storyboard */; };
+		FAF2CD5F28C9A6B000024EB2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2CD5E28C9A6B000024EB2 /* UIViewExtension.swift */; };
+		FAF2CD6828C9ADE500024EB2 /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2CD6728C9ADE500024EB2 /* NavigationView.xib */; };
+		FAF2CD6D28C9BB7000024EB2 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2CD6C28C9BB7000024EB2 /* NavigationView.swift */; };
+		FAF2CD6F28C9CB4100024EB2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2CD6E28C9CB4100024EB2 /* UIColorExtension.swift */; };
+		FAF2CD7A28D012A200024EB2 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2CD7928D012A200024EB2 /* MainView.xib */; };
+		FAF2CD7C28D012AC00024EB2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2CD7B28D012AC00024EB2 /* MainView.swift */; };
+		FAF2CD8028D01AEB00024EB2 /* DisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2CD7F28D01AEB00024EB2 /* DisplayView.xib */; };
+		FAF2CD8228D01AFD00024EB2 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2CD8128D01AFD00024EB2 /* DisplayView.swift */; };
+		FAF2CD8528D0268600024EB2 /* FunctionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2CD8428D0268600024EB2 /* FunctionView.xib */; };
+		FAF2CD8728D0269C00024EB2 /* FunctionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2CD8628D0269C00024EB2 /* FunctionView.swift */; };
+		FAF2CD8D28D05D9600024EB2 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2CD8C28D05D9600024EB2 /* TabbarView.swift */; };
+		FAF2CD8F28D05DA000024EB2 /* TabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2CD8E28D05DA000024EB2 /* TabbarView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3908263A4D4D607533AD8C8E /* Pods-CameraVHT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraVHT.release.xcconfig"; path = "Target Support Files/Pods-CameraVHT/Pods-CameraVHT.release.xcconfig"; sourceTree = "<group>"; };
+		83BA90CB27F245D01FCBECCB /* Pods_CameraVHT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraVHT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7528A4236817303B88FBDDD /* Pods-CameraVHT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraVHT.debug.xcconfig"; path = "Target Support Files/Pods-CameraVHT/Pods-CameraVHT.debug.xcconfig"; sourceTree = "<group>"; };
+		FA2CB7D128D31D7500FE2E5E /* HomeCamera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeCamera.storyboard; sourceTree = "<group>"; };
+		FA2CB7D528D31D9100FE2E5E /* HomeCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCamera.swift; sourceTree = "<group>"; };
+		FA2CB7D928D325BB00FE2E5E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		FA2CB7DB28D325D300FE2E5E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../.Trash/ViewController.swift; sourceTree = "<group>"; };
+		FA2CB7DE28D32EF200FE2E5E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		FA2CB7E028D32EFD00FE2E5E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		FA2CB7E328D3356000FE2E5E /* AvertaStdCY-Regular_3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvertaStdCY-Regular_3.otf"; sourceTree = "<group>"; };
+		FA7BB11F28D0E94B00EACBAA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FA7BB12128D0E95A00EACBAA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA7BB12328D0E96100EACBAA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FA7BB12528D0E96D00EACBAA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FA7BB12728D0E9A200EACBAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA7BB12928D0E9AA00EACBAA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FA7BB12B28D0E9B600EACBAA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FA7BB12D28D0E9BF00EACBAA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		FA7BB12F28D0E9C700EACBAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA7BB13128D0E9DF00EACBAA /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		FA7BB13328D0E9F000EACBAA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FA7BB13528D0EA0000EACBAA /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		FA7BB13728D0EA0B00EACBAA /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		FA7BB13928D0EA1500EACBAA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FA7BB13B28D0EA1D00EACBAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA7BB13D28D0EA2600EACBAA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FA7BB13F28D0EA2D00EACBAA /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		FA7BB14128D0EA3600EACBAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA8FC18D28E2D27600A6F5D0 /* ControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ControlView.xib; sourceTree = "<group>"; };
+		FA8FC18E28E2D27600A6F5D0 /* ControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		FAF2CD4728C991F300024EB2 /* CameraVHT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraVHT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF2CD4A28C991F300024EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAF2CD4C28C991F300024EB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAF2CD5328C991F400024EB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAF2CD5628C991F400024EB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAF2CD5828C991F400024EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF2CD5E28C9A6B000024EB2 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FAF2CD6728C9ADE500024EB2 /* NavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationView.xib; sourceTree = "<group>"; };
+		FAF2CD6C28C9BB7000024EB2 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		FAF2CD6E28C9CB4100024EB2 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		FAF2CD7828C9F49A00024EB2 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		FAF2CD7928D012A200024EB2 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		FAF2CD7B28D012AC00024EB2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FAF2CD7E28D018A200024EB2 /* SVN-Gotham Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SVN-Gotham Regular.otf"; sourceTree = "<group>"; };
+		FAF2CD7F28D01AEB00024EB2 /* DisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayView.xib; sourceTree = "<group>"; };
+		FAF2CD8128D01AFD00024EB2 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		FAF2CD8328D01FE000024EB2 /* SVN-Gotham Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SVN-Gotham Light.ttf"; sourceTree = "<group>"; };
+		FAF2CD8428D0268600024EB2 /* FunctionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionView.xib; sourceTree = "<group>"; };
+		FAF2CD8628D0269C00024EB2 /* FunctionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionView.swift; sourceTree = "<group>"; };
+		FAF2CD8C28D05D9600024EB2 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		FAF2CD8E28D05DA000024EB2 /* TabbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarView.xib; sourceTree = "<group>"; };
+		FAF2CD9028D061CF00024EB2 /* SVN-Gotham Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SVN-Gotham Book.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF2CD4428C991F300024EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7BB14628D0EE9F00EACBAA /* AVFoundation.framework in Frameworks */,
+				FA7BB16028D0EEB800EACBAA /* VideoToolbox.framework in Frameworks */,
+				FA7BB13228D0E9E500EACBAA /* libbz2.tbd in Frameworks */,
+				FA7BB14E28D0EEA500EACBAA /* CoreMedia.framework in Frameworks */,
+				FA7BB13828D0EA0E00EACBAA /* libxml2.tbd in Frameworks */,
+				FA7BB15628D0EEB700EACBAA /* OpenGLES.framework in Frameworks */,
+				FA7BB15E28D0EEB800EACBAA /* UIKit.framework in Frameworks */,
+				FA7BB15028D0EEA500EACBAA /* CoreText.framework in Frameworks */,
+				FA7BB15428D0EEA500EACBAA /* Foundation.framework in Frameworks */,
+				FA7BB14C28D0EEA400EACBAA /* CoreGraphics.framework in Frameworks */,
+				FA7BB16228D0EEC600EACBAA /* Pods_CameraVHT.framework in Frameworks */,
+				FA7BB14A28D0EEA400EACBAA /* CoreFoundation.framework in Frameworks */,
+				FA7BB13428D0E9F800EACBAA /* libc++.tbd in Frameworks */,
+				FA7BB15C28D0EEB800EACBAA /* Security.framework in Frameworks */,
+				FA7BB14828D0EEA000EACBAA /* CFNetwork.framework in Frameworks */,
+				FA7BB15228D0EEA500EACBAA /* CoreVideo.framework in Frameworks */,
+				FA7BB15A28D0EEB700EACBAA /* QuartzCore.framework in Frameworks */,
+				FA7BB13628D0EA0400EACBAA /* libiconv.tbd in Frameworks */,
+				FA7BB14328D0EE9B00EACBAA /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70F457E19449370A55F8CC7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7528A4236817303B88FBDDD /* Pods-CameraVHT.debug.xcconfig */,
+				3908263A4D4D607533AD8C8E /* Pods-CameraVHT.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E8EA4383BCE90508313190B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7BB14128D0EA3600EACBAA /* UIKit.framework */,
+				FA7BB13F28D0EA2D00EACBAA /* VideoToolbox.framework */,
+				FA7BB13D28D0EA2600EACBAA /* Security.framework */,
+				FA7BB13B28D0EA1D00EACBAA /* QuartzCore.framework */,
+				FA7BB13928D0EA1500EACBAA /* OpenGLES.framework */,
+				FA7BB13728D0EA0B00EACBAA /* libxml2.tbd */,
+				FA7BB13528D0EA0000EACBAA /* libiconv.tbd */,
+				FA7BB13328D0E9F000EACBAA /* libc++.tbd */,
+				FA7BB13128D0E9DF00EACBAA /* libbz2.tbd */,
+				FA7BB12F28D0E9C700EACBAA /* Foundation.framework */,
+				FA7BB12D28D0E9BF00EACBAA /* CoreVideo.framework */,
+				FA7BB12B28D0E9B600EACBAA /* CoreText.framework */,
+				FA7BB12928D0E9AA00EACBAA /* CoreMedia.framework */,
+				FA7BB12728D0E9A200EACBAA /* CoreGraphics.framework */,
+				FA7BB12528D0E96D00EACBAA /* CoreFoundation.framework */,
+				FA7BB12328D0E96100EACBAA /* CFNetwork.framework */,
+				FA7BB12128D0E95A00EACBAA /* AVFoundation.framework */,
+				FA7BB11F28D0E94B00EACBAA /* AudioToolbox.framework */,
+				83BA90CB27F245D01FCBECCB /* Pods_CameraVHT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA1259E928D31BF500C05EFF /* HomeCamera */ = {
+			isa = PBXGroup;
+			children = (
+				FA2CB7D528D31D9100FE2E5E /* HomeCamera.swift */,
+				FA2CB7D128D31D7500FE2E5E /* HomeCamera.storyboard */,
+				FA8FC18C28E2D23C00A6F5D0 /* ControlView */,
+				FA8FC19228E2D2DE00A6F5D0 /* NavigationView */,
+				FA8FC19128E2D2D000A6F5D0 /* MainView */,
+				FA8FC18A28E2D17100A6F5D0 /* DisplayView */,
+				FA2398EB28D87BFF00CCA401 /* TabbarView */,
+				FA2CB7E428D75EA200FE2E5E /* FunctionView */,
+			);
+			path = HomeCamera;
+			sourceTree = "<group>";
+		};
+		FA2398EB28D87BFF00CCA401 /* TabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2CD8E28D05DA000024EB2 /* TabbarView.xib */,
+				FAF2CD8C28D05D9600024EB2 /* TabbarView.swift */,
+			);
+			path = TabbarView;
+			sourceTree = "<group>";
+		};
+		FA2CB7DD28D32EC500FE2E5E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FA2CB7DE28D32EF200FE2E5E /* Login.swift */,
+				FA2CB7E028D32EFD00FE2E5E /* Login.storyboard */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FA2CB7E428D75EA200FE2E5E /* FunctionView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2CD8428D0268600024EB2 /* FunctionView.xib */,
+				FAF2CD8628D0269C00024EB2 /* FunctionView.swift */,
+			);
+			path = FunctionView;
+			sourceTree = "<group>";
+		};
+		FA8FC18A28E2D17100A6F5D0 /* DisplayView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2CD7F28D01AEB00024EB2 /* DisplayView.xib */,
+				FAF2CD8128D01AFD00024EB2 /* DisplayView.swift */,
+			);
+			path = DisplayView;
+			sourceTree = "<group>";
+		};
+		FA8FC18C28E2D23C00A6F5D0 /* ControlView */ = {
+			isa = PBXGroup;
+			children = (
+				FA8FC18E28E2D27600A6F5D0 /* ControlView.swift */,
+				FA8FC18D28E2D27600A6F5D0 /* ControlView.xib */,
+			);
+			path = ControlView;
+			sourceTree = "<group>";
+		};
+		FA8FC19128E2D2D000A6F5D0 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2CD7928D012A200024EB2 /* MainView.xib */,
+				FAF2CD7B28D012AC00024EB2 /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		FA8FC19228E2D2DE00A6F5D0 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2CD6728C9ADE500024EB2 /* NavigationView.xib */,
+				FAF2CD6C28C9BB7000024EB2 /* NavigationView.swift */,
+			);
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		FAF2CD3E28C991F300024EB2 = {
+			isa = PBXGroup;
+			children = (
+				FAF2CD4928C991F300024EB2 /* CameraVHT */,
+				FAF2CD4828C991F300024EB2 /* Products */,
+				70F457E19449370A55F8CC7A /* Pods */,
+				9E8EA4383BCE90508313190B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF2CD4828C991F300024EB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2CD4728C991F300024EB2 /* CameraVHT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF2CD4928C991F300024EB2 /* CameraVHT */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2CD4A28C991F300024EB2 /* AppDelegate.swift */,
+				FAF2CD4C28C991F300024EB2 /* SceneDelegate.swift */,
+				FAF2CD6B28C9AE1C00024EB2 /* CustomView */,
+				FAF2CD6028C9A9D900024EB2 /* Extension */,
+				FAF2CD5328C991F400024EB2 /* Assets.xcassets */,
+				FAF2CD5528C991F400024EB2 /* LaunchScreen.storyboard */,
+				FA2CB7D928D325BB00FE2E5E /* Main.storyboard */,
+				FA2CB7DB28D325D300FE2E5E /* ViewController.swift */,
+				FAF2CD5828C991F400024EB2 /* Info.plist */,
+			);
+			path = CameraVHT;
+			sourceTree = "<group>";
+		};
+		FAF2CD6028C9A9D900024EB2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2CD5E28C9A6B000024EB2 /* UIViewExtension.swift */,
+				FAF2CD6E28C9CB4100024EB2 /* UIColorExtension.swift */,
+				FAF2CD7D28D0165300024EB2 /* FontExtension */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FAF2CD6B28C9AE1C00024EB2 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				FA2CB7DD28D32EC500FE2E5E /* Authentication */,
+				FA1259E928D31BF500C05EFF /* HomeCamera */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		FAF2CD7D28D0165300024EB2 /* FontExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2CD9028D061CF00024EB2 /* SVN-Gotham Book.otf */,
+				FAF2CD7828C9F49A00024EB2 /* Roboto-Medium.ttf */,
+				FA2CB7E328D3356000FE2E5E /* AvertaStdCY-Regular_3.otf */,
+				FAF2CD7E28D018A200024EB2 /* SVN-Gotham Regular.otf */,
+				FAF2CD8328D01FE000024EB2 /* SVN-Gotham Light.ttf */,
+			);
+			path = FontExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF2CD4628C991F300024EB2 /* CameraVHT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF2CD5B28C991F400024EB2 /* Build configuration list for PBXNativeTarget "CameraVHT" */;
+			buildPhases = (
+				67B6EC130EE7BDA08898CBD4 /* [CP] Check Pods Manifest.lock */,
+				FAF2CD4328C991F300024EB2 /* Sources */,
+				FAF2CD4428C991F300024EB2 /* Frameworks */,
+				FAF2CD4528C991F300024EB2 /* Resources */,
+				D31D890B261E6E63BA059893 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CameraVHT;
+			productName = CameraVHT;
+			productReference = FAF2CD4728C991F300024EB2 /* CameraVHT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF2CD3F28C991F300024EB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FAF2CD4628C991F300024EB2 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = FAF2CD4228C991F300024EB2 /* Build configuration list for PBXProject "CameraVHT" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF2CD3E28C991F300024EB2;
+			productRefGroup = FAF2CD4828C991F300024EB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF2CD4628C991F300024EB2 /* CameraVHT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF2CD4528C991F300024EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF2CD5728C991F400024EB2 /* LaunchScreen.storyboard in Resources */,
+				FA2CB7DA28D325BB00FE2E5E /* Main.storyboard in Resources */,
+				FAF2CD8528D0268600024EB2 /* FunctionView.xib in Resources */,
+				FA2CB7D228D31D7500FE2E5E /* HomeCamera.storyboard in Resources */,
+				FAF2CD5428C991F400024EB2 /* Assets.xcassets in Resources */,
+				FAF2CD7A28D012A200024EB2 /* MainView.xib in Resources */,
+				FAF2CD8F28D05DA000024EB2 /* TabbarView.xib in Resources */,
+				FAF2CD6828C9ADE500024EB2 /* NavigationView.xib in Resources */,
+				FAF2CD8028D01AEB00024EB2 /* DisplayView.xib in Resources */,
+				FA2CB7E128D32EFD00FE2E5E /* Login.storyboard in Resources */,
+				FA8FC18F28E2D27600A6F5D0 /* ControlView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67B6EC130EE7BDA08898CBD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CameraVHT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D31D890B261E6E63BA059893 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CameraVHT/Pods-CameraVHT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CameraVHT/Pods-CameraVHT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CameraVHT/Pods-CameraVHT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF2CD4328C991F300024EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF2CD7C28D012AC00024EB2 /* MainView.swift in Sources */,
+				FAF2CD4B28C991F300024EB2 /* AppDelegate.swift in Sources */,
+				FA2CB7DF28D32EF200FE2E5E /* Login.swift in Sources */,
+				FAF2CD6D28C9BB7000024EB2 /* NavigationView.swift in Sources */,
+				FAF2CD5F28C9A6B000024EB2 /* UIViewExtension.swift in Sources */,
+				FA2CB7D628D31D9100FE2E5E /* HomeCamera.swift in Sources */,
+				FAF2CD8D28D05D9600024EB2 /* TabbarView.swift in Sources */,
+				FA2CB7DC28D325D300FE2E5E /* ViewController.swift in Sources */,
+				FAF2CD8228D01AFD00024EB2 /* DisplayView.swift in Sources */,
+				FA8FC19028E2D27600A6F5D0 /* ControlView.swift in Sources */,
+				FAF2CD4D28C991F300024EB2 /* SceneDelegate.swift in Sources */,
+				FAF2CD8728D0269C00024EB2 /* FunctionView.swift in Sources */,
+				FAF2CD6F28C9CB4100024EB2 /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAF2CD5528C991F400024EB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF2CD5628C991F400024EB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAF2CD5928C991F400024EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAF2CD5A28C991F400024EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAF2CD5C28C991F400024EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7528A4236817303B88FBDDD /* Pods-CameraVHT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CameraVHT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominh.CameraVHT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAF2CD5D28C991F400024EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3908263A4D4D607533AD8C8E /* Pods-CameraVHT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CameraVHT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominh.CameraVHT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF2CD4228C991F300024EB2 /* Build configuration list for PBXProject "CameraVHT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF2CD5928C991F400024EB2 /* Debug */,
+				FAF2CD5A28C991F400024EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF2CD5B28C991F400024EB2 /* Build configuration list for PBXNativeTarget "CameraVHT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF2CD5C28C991F400024EB2 /* Debug */,
+				FAF2CD5D28C991F400024EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF2CD3F28C991F300024EB2 /* Project object */;
+}

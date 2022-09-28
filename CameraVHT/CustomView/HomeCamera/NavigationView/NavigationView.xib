@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="SVN-Gotham Regular.otf">
+            <string>SVN-Gotham</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationView" customModule="CameraVHT" customModuleProvider="target">
+            <connections>
+                <outlet property="cornerView" destination="WV0-3u-4mJ" id="lrK-ee-JHA"/>
+                <outlet property="viewContainer" destination="uM7-yE-ttu" id="9SB-kN-VdR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ABW-Vd-OAy">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uM7-yE-ttu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-3u-4mJ">
+                    <rect key="frame" x="0.0" y="92" width="414" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera so 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoD-re-vFq">
+                            <rect key="frame" x="16" y="16" width="96.5" height="22"/>
+                            <fontDescription key="fontDescription" name="SVN-Gotham" family="SVN-Gotham" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="DoD-re-vFq" firstAttribute="leading" secondItem="WV0-3u-4mJ" secondAttribute="leading" constant="16" id="IYY-kZ-SeO"/>
+                        <constraint firstItem="DoD-re-vFq" firstAttribute="top" secondItem="WV0-3u-4mJ" secondAttribute="top" constant="16" id="QTF-gw-R0z"/>
+                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="DoD-re-vFq" secondAttribute="trailing" constant="301.5" id="vEc-0s-4U3"/>
+                        <constraint firstAttribute="bottom" secondItem="DoD-re-vFq" secondAttribute="bottom" constant="16" id="vxH-P5-E7X"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector" translatesAutoresizingMaskIntoConstraints="NO" id="kme-2W-nW1">
+                    <rect key="frame" x="17" y="56" width="6" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="6" id="4mQ-i4-d2P"/>
+                        <constraint firstAttribute="height" constant="10" id="Eax-gp-Vjd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KY-un-p0f">
+                    <rect key="frame" x="182.5" y="54" width="49" height="16"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlU-MQ-ier">
+                    <rect key="frame" x="349" y="43" width="45" height="38"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="Settings"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="olT-0F-TXb"/>
+            <constraints>
+                <constraint firstItem="kme-2W-nW1" firstAttribute="leading" secondItem="ABW-Vd-OAy" secondAttribute="leading" constant="17" id="3xe-UN-pO0"/>
+                <constraint firstItem="uM7-yE-ttu" firstAttribute="top" secondItem="ABW-Vd-OAy" secondAttribute="top" id="4yo-WQ-4Va"/>
+                <constraint firstAttribute="trailing" secondItem="uM7-yE-ttu" secondAttribute="trailing" id="6aD-LT-NUd"/>
+                <constraint firstItem="2KY-un-p0f" firstAttribute="centerX" secondItem="ABW-Vd-OAy" secondAttribute="centerX" id="FGp-qb-sdx"/>
+                <constraint firstItem="RlU-MQ-ier" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="olT-0F-TXb" secondAttribute="leading" constant="349" id="LuX-ql-gKs"/>
+                <constraint firstItem="2KY-un-p0f" firstAttribute="top" relation="lessThanOrEqual" secondItem="ABW-Vd-OAy" secondAttribute="top" constant="54" id="Mjs-U1-V6S"/>
+                <constraint firstItem="kme-2W-nW1" firstAttribute="top" relation="lessThanOrEqual" secondItem="ABW-Vd-OAy" secondAttribute="top" constant="59" id="bPB-dZ-RlQ"/>
+                <constraint firstAttribute="bottom" secondItem="kme-2W-nW1" secondAttribute="bottom" constant="80" id="c3r-x7-Irf"/>
+                <constraint firstItem="olT-0F-TXb" firstAttribute="trailing" secondItem="RlU-MQ-ier" secondAttribute="trailing" constant="20" id="gm0-Oz-j86"/>
+                <constraint firstAttribute="bottom" secondItem="uM7-yE-ttu" secondAttribute="bottom" id="krl-Zg-XdF"/>
+                <constraint firstAttribute="bottom" secondItem="WV0-3u-4mJ" secondAttribute="bottom" id="lBF-el-umO"/>
+                <constraint firstAttribute="trailing" secondItem="WV0-3u-4mJ" secondAttribute="trailing" id="pAi-et-7Fj"/>
+                <constraint firstAttribute="bottom" secondItem="2KY-un-p0f" secondAttribute="bottom" constant="76" id="tAT-Ie-6pd"/>
+                <constraint firstItem="RlU-MQ-ier" firstAttribute="top" relation="lessThanOrEqual" secondItem="ABW-Vd-OAy" secondAttribute="top" constant="54" id="tKM-qk-ARb"/>
+                <constraint firstItem="uM7-yE-ttu" firstAttribute="leading" secondItem="ABW-Vd-OAy" secondAttribute="leading" id="to1-uC-AHR"/>
+                <constraint firstAttribute="bottom" secondItem="RlU-MQ-ier" secondAttribute="bottom" constant="65" id="wbE-Ra-BMC"/>
+                <constraint firstItem="WV0-3u-4mJ" firstAttribute="leading" secondItem="ABW-Vd-OAy" secondAttribute="leading" id="zDU-oN-1JT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="404.34782608695656" y="-60.9375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Settings" width="24" height="24"/>
+        <image name="Vector" width="6" height="10"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
